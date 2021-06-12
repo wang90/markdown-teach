@@ -2,7 +2,6 @@
   <n-config-provider :theme="darkTheme">
     <home />
   </n-config-provider>
-  
 </template>
 
 <script lang="ts">
@@ -25,4 +24,5 @@ export default defineComponent({
 </script>
 
 <style>
+
 </style>
