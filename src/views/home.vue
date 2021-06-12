@@ -14,9 +14,9 @@
 <script lang="ts">
 import { ref, defineComponent } from 'vue';
 import { NLayout, NLayoutHeader, NLayoutContent, NLayoutFooter, NGrid,NGi } from 'naive-ui'
-import TeachMessage from '../components/TeachMessage.vue';
-import ToMarkdown from '../components/ToMarkdown.vue';
-import EditRich from '../components/EditRich.vue';
+import TeachMessage from '@src/components/TeachMessage.vue';
+import ToMarkdown from '@src/components/ToMarkdown.vue';
+import EditRich from '@src/components/EditRich.vue';
 
 export default defineComponent({
     name: 'Home',

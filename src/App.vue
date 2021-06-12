@@ -7,8 +7,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Home from './views/home.vue'
 import { darkTheme, NConfigProvider } from 'naive-ui'
+import Home from '@src/views/home.vue'
 
 export default defineComponent({
     name: 'App',
