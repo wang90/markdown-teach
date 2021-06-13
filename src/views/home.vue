@@ -1,15 +1,19 @@
 <template>
     <n-layout-header bordered>Teach-markdown</n-layout-header>
     <n-layout>
-      <n-grid x-gap="12" :cols="2">
+      <n-grid :cols="1"> 
         <teach-message></teach-message>
-        <edit-rich></edit-rich>
       </n-grid>
-      <n-grid x-gap="12" :cols="2">
-        <to-markdown></to-markdown>
+      <n-grid :cols="2">
+        <edit-rich @value="getValue"></edit-rich>
+      </n-grid>
+      <n-grid  :cols="2">
+        <to-markdown :value="value"></to-markdown>
       </n-grid>
     </n-layout>
-    <n-layout-footer bordered>footer</n-layout-footer>
+    <n-layout-footer bordered>
+
+    </n-layout-footer>
 </template>
 <script lang="ts">
 import { ref, defineComponent } from 'vue';
@@ -30,9 +34,16 @@ export default defineComponent({
       NLayoutFooter,
       NGrid,
     },
-    setup: () => {
-      return {}
+    data() {
+      return {
+        value: ''
+      }
     },
+    methods: {
+      getValue( value: string ) {
+        this.value = value
+      }
+    }
 })
 </script>
   
