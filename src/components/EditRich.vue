@@ -8,7 +8,7 @@
 </template>
   
 <script lang="ts">
-import { ref, defineComponent } from 'vue'
+import { defineComponent } from 'vue'
 import { NInput } from 'naive-ui'
 
 export default defineComponent({
@@ -22,7 +22,7 @@ export default defineComponent({
         }
     },
     methods: {
-        update( html: string ) {
+        update( html: any ) {
             this.$emit( 'value', html )
         }
     }

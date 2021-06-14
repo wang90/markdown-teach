@@ -3,9 +3,9 @@
 </template>
   
 <script lang="ts">
-import { ref, defineComponent, watch } from 'vue'
+import { defineComponent } from 'vue'
 import showdown  from 'showdown'
-const converter = new showdown.Converter();
+const converter = new showdown.Converter()
 
 export default defineComponent({
     name: 'ToMarkdown',
@@ -17,7 +17,7 @@ export default defineComponent({
     },
     computed: {
         htmlToMd(): string {
-            return converter.makeHtml( this.value );
+            return converter.makeHtml( this.value )
         }
     },
     setup: () => {

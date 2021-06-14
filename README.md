@@ -12,4 +12,4 @@ npm run dev
 `````
 
 ## 项目结构
-vite + vue3 + typescript + naive-ui
+vite + vue3 + typescript + naive-ui + showdown
