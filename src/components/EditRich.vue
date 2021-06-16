@@ -2,7 +2,7 @@
     <n-input
         type="textarea"
         :autosize="true"
-        placeholder="基本的 Textarea"
+        placeholder="ready ..."
         @update:value="update"
     />
 </template>

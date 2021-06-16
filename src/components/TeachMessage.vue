@@ -1,5 +1,7 @@
 <template>
-    <div> teach-message-component </div>
+    <div class="teach-compontent"> 
+        <div>Hello, Please await Game Markdown...</div>
+    </div>
 </template>
   
 <script lang="ts">
@@ -13,6 +15,10 @@ export default defineComponent({
 </script>
   
 <style scoped>
-
+.teach-compontent {
+    max-height: 40px;
+    padding: 8px 20px;
+    opacity: 0.9;
+}
 </style>
   

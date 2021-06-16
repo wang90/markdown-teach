@@ -8,7 +8,15 @@ export default defineConfig({
   alias: {
     '@src': path.resolve(__dirname,'/src/'),
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "../css/all.scss";' // 添加公共样式
+      }
+    }
+  },
   plugins: [
     vue(),
   ],
+
 })
