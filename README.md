@@ -1,7 +1,7 @@
 
 # teach-markdown
 
-可能你使用过markdown,他很方便，但是我记得自己每次编辑刚上手的时候还是比较痛苦的，所以想用游戏的方式来学习使用markdown,如果你喜欢，那么就来试试[HELLO MARKDOWN](./dist/index.html)
+可能你使用过markdown,他很方便，但是我记得自己每次编辑刚上手的时候还是比较痛苦的，所以想用游戏的方式来学习使用markdown,如果你喜欢，那么就来试试 [HELLO MARKDOWN](./dist/index.html)
 
 ## 启动
 `````
