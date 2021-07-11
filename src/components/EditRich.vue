@@ -1,13 +1,30 @@
 <template>
-    <div> edit-rich-component </div>
+    <n-input
+        type="textarea"
+        :autosize="true"
+        placeholder="ready ..."
+        @update:value="update"
+    />
 </template>
   
 <script lang="ts">
-import { ref, defineComponent } from 'vue'
+import { defineComponent } from 'vue'
+import { NInput } from 'naive-ui'
+
 export default defineComponent({
     name: 'EditRich',
-    setup: () => {
-      
+    components: {
+        NInput,
+    },
+    data() {
+        return {
+            value: '',
+        }
+    },
+    methods: {
+        update( html: any ) {
+            this.$emit( 'value', html )
+        }
     }
 })
 </script>
